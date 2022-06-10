@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon app.js",
+    "start": "nodemon --exec babel-node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +18,16 @@
   },
   "homepage": "https://github.com/hiamSonam/Excel-To-MySQL#readme",
   "dependencies": {
-    "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
+    "@babel/core": "^7.18.2",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.18.2",
+    "body": "^5.1.0",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "parser": "^0.1.4",
+    "request": "^2.88.2"
   }
 }
